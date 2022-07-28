@@ -18,11 +18,11 @@ function EditDog({id, name, breed, age, trait, onUpdateDog, image}) {
              "Content-Type": "application/json",
            },
            body: JSON.stringify({
-            names,
-             breeds,
-             ages,
-             traits,
-             images,
+            name: names,
+             breed: breeds,
+             age: ages,
+             trait: traits,
+             image: images,
            }),
          })
            .then((r) => r.json())
